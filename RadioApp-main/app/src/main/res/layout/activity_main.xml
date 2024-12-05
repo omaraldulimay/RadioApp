@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.radioapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/radioStationImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/radio_station_image_placeholder" />
+
+    <TextView
+        android:id="@+id/currentSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioStationImage"
+        android:padding="16dp"
+        android:text="Interpret - Titel\nAlbum"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentSong"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/ratePlaylistButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Playlist bewerten"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/submitRequestButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Songwunsch"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/rateModeratorButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Moderator bewerten"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Hier können weitere UI-Elemente eingefügt werden -->
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="com.example.radioapp.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/radio_icon"
+        android:label="@string/app_name"
+        android:roundIcon= "@drawable/radio_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RadioApp"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.radioapp.RateHostActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.radioapp.SongWishActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.radioapp.RatePlaylistActivity"
+            android:exported="false"
+            android:label="@string/title_activity_rate_playlist"
+            android:theme="@style/Theme.RadioApp" />
+        <activity
+            android:name="com.example.radioapp.MainActivity"
+            android:exported="true"
+            android:label="RadioApp"
+            android:theme="@style/Theme.RadioApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
